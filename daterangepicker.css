@@ -134,12 +134,12 @@
   padding: 3px;
 }
 
-.daterangepicker .calendar-table .next span {
+.daterangepicker .calendar-table .next span, .daterangepicker.rtl .calendar-table .prev span  {
   transform: rotate(-45deg);
   -webkit-transform: rotate(-45deg);
 }
 
-.daterangepicker .calendar-table .prev span {
+.daterangepicker .calendar-table .prev span, .daterangepicker.rtl .calendar-table .next span  {
   transform: rotate(135deg);
   -webkit-transform: rotate(135deg);
 }
@@ -199,9 +199,15 @@
 .daterangepicker td.start-date {
   border-radius: 4px 0 0 4px;
 }
+.daterangepicker.rtl td.start-date {
+  border-radius: 0 4px 4px 0 ;
+}
 
 .daterangepicker td.end-date {
   border-radius: 0 4px 4px 0;
+}
+.daterangepicker.rtl td.end-date {
+  border-radius: 4px 0 0 4px;
 }
 
 .daterangepicker td.start-date.end-date {
@@ -256,6 +262,7 @@
   margin: 4px auto 0 auto;
   line-height: 30px;
   position: relative;
+  direction: ltr;
 }
 
 .daterangepicker .calendar-time select.disabled {
@@ -359,6 +366,10 @@
   .daterangepicker {
     direction: ltr;
     text-align: left;
+  }
+  .daterangepicker.rtl {
+    direction: rtl;
+    text-align: right;
   }
 
   .daterangepicker .drp-calendar.left {

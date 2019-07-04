@@ -1,7 +1,7 @@
 {
-  "name": "daterangepicker",
+  "name": "jalali-daterangepicker",
   "version": "3.0.5",
-  "description": "Date range picker component for Bootstrap",
+  "description": "Jalali Date range picker component for Bootstrap",
   "main": "daterangepicker.js",
   "style": "daterangepicker.css",
   "scripts": {
@@ -9,20 +9,20 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/dangrossman/daterangepicker.git"
+    "url": "https://github.com/yeganemehr/daterangepicker.git"
   },
   "author": {
-    "name": "Dan Grossman",
-    "email": "dan@dangrossman.info",
-    "url": "http://www.dangrossman.info"
+    "name": "Amir.h Yeganemehr",
+    "email": "yeganemehr@jeyserver.com",
+    "url": "http://www.yeganemehr.ir"
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/dangrossman/daterangepicker/issues"
+    "url": "https://github.com/yeganemehr/daterangepicker/issues"
   },
-  "homepage": "https://github.com/dangrossman/daterangepicker",
+  "homepage": "https://github.com/yeganemehr/daterangepicker",
   "dependencies": {
     "jquery": ">=1.10",
-    "moment": "^2.9.0"
+    "jalali-moment": "^3.3.1"
   }
 }
